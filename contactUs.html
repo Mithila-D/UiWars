@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      video {
+        width: 100%;
+        height: auto;
+      }
+
+      .video-container {
+        position: relative; /* Position relative to contain the overlay */
+        display: flex;
+        justify-content: center;
+        align-items: flex-end; /* Aligns the video to the bottom of the container */
+        height: 600px; /* Set a specific height for the container */
+        overflow: hidden; /* Hides any overflow */
+      }
+
+      .video-overlay {
+        position: absolute;
+        top: 50%; /* Center the overlay vertically */
+        left: 50%; /* Center the overlay horizontally */
+        transform: translate(-50%, -50%); /* Adjust position to center */
+        color: white;
+        font-size: 2rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add some shadow for visibility */
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.5
+        ); /* Optional: semi-transparent background */
+        padding: 10px; /* Optional: padding around the text */
+        border-radius: 5px; /* Optional: rounded corners */
+      }
+
+      .row:after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      [class*="col-"] {
+        float: left;
+        padding: 15px;
+        width: 100%;
+      }
+
+      @media only screen and (min-width: 600px) {
+        .col-s-1 {
+          width: 8.33%;
+        }
+        .col-s-2 {
+          width: 16.66%;
+        }
+        .col-s-3 {
+          width: 25%;
+        }
+        .col-s-4 {
+          width: 33.33%;
+        }
+        .col-s-5 {
+          width: 41.66%;
+        }
+        .col-s-6 {
+          width: 50%;
+        }
+        .col-s-7 {
+          width: 58.33%;
+        }
+        .col-s-8 {
+          width: 66.66%;
+        }
+        .col-s-9 {
+          width: 75%;
+        }
+        .col-s-10 {
+          width: 83.33%;
+        }
+        .col-s-11 {
+          width: 91.66%;
+        }
+        .col-s-12 {
+          width: 100%;
+        }
+      }
+
+      @media only screen and (min-width: 768px) {
+        .col-1 {
+          width: 8.33%;
+        }
+        .col-2 {
+          width: 16.66%;
+        }
+        .col-3 {
+          width: 25%;
+        }
+        .col-4 {
+          width: 33.33%;
+        }
+        .col-5 {
+          width: 41.66%;
+        }
+        .col-6 {
+          width: 50%;
+        }
+        .col-7 {
+          width: 58.33%;
+        }
+        .col-8 {
+          width: 66.66%;
+        }
+        .col-9 {
+          width: 75%;
+        }
+        .col-10 {
+          width: 83.33%;
+        }
+        .col-11 {
+          width: 91.66%;
+        }
+        .col-12 {
+          width: 100%;
+        }
+      }
+
+      html {
+        font-family: "Lucida Sans", sans-serif;
+      }
+
+      .header {
+        background-color: #9933cc;
+        color: #ffffff;
+        padding: 15px;
+      }
+
+      .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .menu li {
+        padding: 8px;
+        margin-bottom: 7px;
+        background-color: #33b5e5;
+        color: #ffffff;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      }
+
+      .menu li:hover {
+        background-color: #0099cc;
+      }
+
+      .aside {
+        background-color: #33b5e5;
+        padding: 15px;
+        color: #ffffff;
+        text-align: center;
+        font-size: 14px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      }
+
+      .footer {
+        background-color: #0099cc;
+        color: #ffffff;
+        text-align: center;
+        font-size: 12px;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Contact Us</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-3 col-s-3 menu">
+        <ul>
+          <li>
+            <a href="index.html" style="text-decoration: none; color: #ffffff"
+              >Home</a
+            >
+          </li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-s-9">
+        <h1>Contact Us</h1>
+        <p>
+          Wanna stay connected with us? Visit our socials. Thinking of
+          organizing a session? We can help you.
+          <button>Organize Session</button>
+        </p>
+        <div class="video-container">
+          <video controls>
+            <source src="images/contactUs.mp4" type="video/mp4" />
+            <source src="images/contactUs.mp4" type="video/ogg" />
+            Your browser does not support HTML5 video.
+          </video>
+          <div class="video-overlay">Contact Us</div>
+          <!-- Overlay div -->
+        </div>
+      </div>
+
+      <div class="col-3 col-s-12">
+        <div class="aside">
+          <h2>
+            <a href="#" style="color: white; text-decoration: none"
+              >Instagram</a
+            >
+          </h2>
+          <h2>
+            <a href="#" style="color: white; text-decoration: none"
+              >What's App</a
+            >
+          </h2>
+          <h2>
+            <a href="#" style="color: white; text-decoration: none">LinkedIn</a>
+          </h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        Resize the browser window to see how the content responds to the
+        resizing.
+      </p>
+    </div>
+  </body>
+</html>
